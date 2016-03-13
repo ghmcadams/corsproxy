@@ -3,6 +3,8 @@ CORS Proxy
 
 A Node.js based command line interface (CLI) for creating a stand-alone CORS proxy server for development
 
+[![NPM](https://nodei.co/npm/corsproxy-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/corsproxy-cli/)
+
 ## Installation
 
     $ npm install corsproxy-cli -g
