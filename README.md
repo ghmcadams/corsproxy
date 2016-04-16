@@ -15,12 +15,12 @@ A Node.js based command line interface (CLI) for creating a stand-alone CORS pro
     $ corsproxy http://www.google.com -p 4000
     $ corsproxy https://api.mydomain.com --port=4000 -l /Users/myname/code/dev
 
-p (optional - Default: 3000): port number that the local proxy server should listen on
-l (optional - Default: ./public): path to the local static files
+- p (optional - Default: 3000): port number that the local proxy server should listen on
+- l (optional - Default: ./public): path to the local static files
 
 In your browser, you can then browse to
 
-    http://localhost:4000/cors
+    http://localhost:4000/corshome
 	
 Displays a status page for the proxy server
 
@@ -38,7 +38,7 @@ Request is rerouted to your target server
 
 (The MIT License)
 
-Copyright (c) 2016 Gabriel McAdams &lt;ghmcadams@yahoo.com&gt;
+Copyright (c) 2016 Gabriel McAdams &lt; ghmcadams@yahoo.com &gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
