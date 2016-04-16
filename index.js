@@ -37,7 +37,7 @@ program
     app.use('/cors', express.static(localStaticPath));
 
     // Home page
-    app.all("/cors" , function(req, res) {
+    app.all("/corshome" , function(req, res) {
       res.send('CORS Proxy that reroutes requests to ' + target).end();
     });
 
@@ -53,9 +53,10 @@ program
       var address = server.address();
       var port = address.port;
 
-      console.log('Local static path: %s', localStaticPath);
-      console.log('Rerouting requests to %s', target);
-      console.log('Listening on port %s', port);
+      console.log('Running CORS Proxy:');
+      console.log('  Listening on port %s', port);
+      console.log('  Local static path: %s', localStaticPath);
+      console.log('  Rerouting all other requests to %s', target);
     });
   })
   .parse(process.argv);
